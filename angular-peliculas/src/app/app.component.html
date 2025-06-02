@@ -16,11 +16,13 @@
   <p>Fecha: {{pelicula.fecha | date:"dd MMMM yyyy"}}</p>
   <p>Precio: {{pelicula.precio | currency}}</p>
 </div> -->
+
+
 <h1>CARTELERA</h1>
-<app-listado-peliculas></app-listado-peliculas>
+<app-listado-peliculas [peliculas]="peliculasCines"></app-listado-peliculas>
 
 <h1>PROXIMAMANETE</h1>
-<app-listado-peliculas></app-listado-peliculas>
+<app-listado-peliculas [peliculas]="peliculasProx"></app-listado-peliculas>
 
 
 

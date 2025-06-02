@@ -12,3 +12,23 @@ h1{
     flex-direction: row;
     gap: 10px;
 }
+
+button{
+    margin-bottom: 20px;
+    border-radius: 10%;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    background-color:burlywood;
+    border-color: blanchedalmond;
+}
+
+.eliminar{
+    border-radius: 10%;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background-color:crimson;
+    border-color: crimson;
+    color: whitesmoke;
+}
