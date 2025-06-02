@@ -1,9 +1,9 @@
 <button (click)="agregarPelicula()">Agregar Pelicula</button>
 
 <app-listado-generico [listado]="peliculas">
-  <ng-container cargando>
+  <!-- <ng-container cargando>
     <span>Cargando</span>
-  </ng-container>
+  </ng-container> -->
   <ng-container vacio>
     <span>No Hay Peliculas en esta Cartelera.</span>
   </ng-container>
@@ -25,7 +25,10 @@
             <p>{{$index}} - Nombre: {{pelicula.nombre | uppercase}}</p>
             <p>Fecha: {{pelicula.fecha | date:"dd MMMM yyyy"}}</p>
             <p>Precio: {{pelicula.precio | currency}}</p>
-            <button class="eliminar" (click)="remover($index)">Eliminar</button>
+            <button mat-stroked-button matTooltip="This is a tooltip!" class="my-custom-button" (click)="remover($index)">
+              Eliminar
+              <mat-icon>delete</mat-icon>
+            </button>
           </div>
         </div>
       </div>
