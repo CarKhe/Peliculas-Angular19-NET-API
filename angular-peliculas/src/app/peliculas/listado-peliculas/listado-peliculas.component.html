@@ -1,4 +1,7 @@
-<button  mat-flat-button (click)="agregarPelicula()">Agregar Pelicula</button>
+<div class="div-agregar-pelicula">
+  <button class="btn-agregar-pelicula"  mat-flat-button (click)="agregarPelicula()">Agregar Pelicula</button>
+</div>
+
 
 <app-listado-generico [listado]="peliculas">
   <!-- <ng-container cargando>
@@ -25,8 +28,8 @@
             <p>{{$index}} - Nombre: {{pelicula.nombre | uppercase}}</p>
             <p>Fecha: {{pelicula.fecha | date:"dd MMMM yyyy"}}</p>
             <p>Precio: {{pelicula.precio | currency}}</p>
-            <p><app-rating [maxRating]="5"></app-rating></p>
-            <button mat-stroked-button matTooltip="This is a tooltip!" class="my-custom-button" (click)="remover($index)">
+            <p><app-rating [maxRating]="5" (votado)="procesarVoto($event)"></app-rating></p>
+            <button mat-stroked-button matTooltip="This is a tooltip!" class="btn-eliminar-pelicula" (click)="remover($index)">
               Eliminar
               <mat-icon>delete</mat-icon>
             </button>

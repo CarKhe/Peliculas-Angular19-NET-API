@@ -27,4 +27,7 @@ export class ListadoPeliculasComponent {
   remover($index: number){
     this.peliculas.splice($index,1)
   }
+  procesarVoto(voto: number){
+    alert(`Calificacion de ${voto}`);
+  }
 }

@@ -13,8 +13,16 @@ h1{
     gap: 10px;
 }
 
-/* .my-custom-button {
+.div-agregar-pelicula{
+    margin-bottom: 20px;
+}
+
+.btn-agregar-pelicula{
+    background-color:#A3C3E3;
+}
+
+.btn-eliminar-pelicula {
   background-color: crimson;
   border-color: crimson;
   color: white;
-} */
+}

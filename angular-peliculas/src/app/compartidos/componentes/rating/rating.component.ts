@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
@@ -8,17 +8,21 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './rating.component.html',
   styleUrl: './rating.component.css'
 })
-export class RatingComponent implements OnInit {
-  ngOnInit(): void {
-    this.maxRatingArreglo = Array(this.maxRating).fill(0); //creacion de la lista en el inicio del componente
-  }
-  @Input({required:true})
-  maxRating !: number;  //Cantidad Maxima de estrellas 
+export class RatingComponent{
+  // ngOnInit(): void {
+  //   // this.maxRatingArreglo = Array(this.maxRating).fill(0); //creacion de la lista en el inicio del componente
+  // }
+  @Input({required:true, transform: (valor:number) => Array(valor).fill(0)}) //Transformacion de number a Array(number)
+  maxRating !: number[];  //Cantidad Maxima de estrellas 
 
   @Input()
   ratinSeleccionado = 0; //Calificacion dada 
 
-  maxRatingArreglo : any[] = []; //Arreglo para la creacion de la lista 
+  //objeto para enventos de salida
+  @Output()
+  votado = new EventEmitter<number>();
+
+  // maxRatingArreglo : any[] = []; //Arreglo para la creacion de la lista 
 
   ratingAnterior = 0; // ultima calificacion dada
 
@@ -42,5 +46,6 @@ export class RatingComponent implements OnInit {
   manejarClick(index: number){
     this.manejarMouseEnter(index);
     this.ratingAnterior = this.ratinSeleccionado;
+    this.votado.emit(this.ratinSeleccionado);
   }
 }
