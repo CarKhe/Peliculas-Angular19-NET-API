@@ -17,12 +17,7 @@ h1{
     margin-bottom: 20px;
 }
 
-.btn-agregar-pelicula{
-    background-color:#A3C3E3;
+.icon-color{
+    color: crimson;
 }
 
-.btn-eliminar-pelicula {
-  background-color: crimson;
-  border-color: crimson;
-  color: white;
-}

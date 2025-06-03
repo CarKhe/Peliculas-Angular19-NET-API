@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { ListadoPeliculasComponent } from "./peliculas/listado-peliculas/listado-peliculas.component";
 import { MenuComponent } from "./compartidos/componentes/menu/menu.component";
 import { RatingComponent } from './compartidos/componentes/rating/rating.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-root', // nombre del componente y se usa etiqueta html <app-root/>
-  imports: [ListadoPeliculasComponent, MenuComponent,RatingComponent], //importaciones
+  imports: [ListadoPeliculasComponent, MenuComponent,RatingComponent,MatButtonModule], //importaciones
   templateUrl: './app.component.html', //plantilla a utilizar
   styleUrl: './app.component.css' //plantilla css
 })

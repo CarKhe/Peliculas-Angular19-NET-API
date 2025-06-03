@@ -1,0 +1,23 @@
+@use "@angular/material" as mat;
+
+
+.primary {
+  @include mat.button-overrides((
+    filled-container-color: crimson,
+    filled-disabled-container-color: purple,
+    outlined-outline-color:black,
+    outlined-label-text-color: green,
+    outlined-ripple-color: green,
+    outlined-focus-state-layer-opacity: purple,
+    outlined-pressed-state-layer-opacity: cyan
+  ));
+}
+
+.secondary{
+ @include mat.button-overrides((
+    filled-container-color: green,
+    filled-disabled-container-color: orange,
+  )); 
+}
+
+
