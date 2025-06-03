@@ -4,9 +4,10 @@ import { ListadoGenericoComponent } from "../../compartidos/componentes/listado-
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTooltip} from '@angular/material/tooltip';
+import { RatingComponent } from '../../compartidos/componentes/rating/rating.component';
 @Component({
   selector: 'app-listado-peliculas',
-  imports: [DatePipe, UpperCasePipe, CurrencyPipe, ListadoGenericoComponent,MatButtonModule,MatIconModule,MatTooltip],
+  imports: [DatePipe, UpperCasePipe, CurrencyPipe, ListadoGenericoComponent,MatButtonModule,MatIconModule,MatTooltip,RatingComponent],
   templateUrl: './listado-peliculas.component.html',
   styleUrl: './listado-peliculas.component.css'
 })

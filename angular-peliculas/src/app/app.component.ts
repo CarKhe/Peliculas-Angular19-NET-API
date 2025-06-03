@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ListadoPeliculasComponent } from "./peliculas/listado-peliculas/listado-peliculas.component";
+import { MenuComponent } from "./compartidos/componentes/menu/menu.component";
+import { RatingComponent } from './compartidos/componentes/rating/rating.component';
 
 @Component({
   selector: 'app-root', // nombre del componente y se usa etiqueta html <app-root/>
-  imports: [ListadoPeliculasComponent], //importaciones
+  imports: [ListadoPeliculasComponent, MenuComponent,RatingComponent], //importaciones
   templateUrl: './app.component.html', //plantilla a utilizar
   styleUrl: './app.component.css' //plantilla css
 })
