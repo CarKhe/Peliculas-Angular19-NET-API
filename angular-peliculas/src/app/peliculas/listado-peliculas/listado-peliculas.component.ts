@@ -20,6 +20,7 @@ export class ListadoPeliculasComponent {
         nombre: 'Una Pelicula de Minecraft',
         fecha: new Date("2025-04-30"),
         precio: 150.23,
+        poster: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f5/MCMoviePoster.jpg/revision/latest?cb=20250513044232'
         
     });
   }

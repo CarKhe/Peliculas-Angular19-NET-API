@@ -17,7 +17,17 @@ h1{
     margin-bottom: 20px;
 }
 
-.icon-color{
-    color: crimson;
+a,button {
+    border-radius: 7%;
 }
 
+.peliculas-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pelicula-container{
+    
+}
