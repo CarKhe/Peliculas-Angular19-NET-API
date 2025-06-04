@@ -21,7 +21,7 @@ export const routes: Routes = [
 
     {path: 'generos',component:IndiceGenerosComponent},
     {path: 'generos/crear',component:CrearGenerosComponent},
-    {path: 'generos/editar/:id',component:EditarGenerosComponent},
+    {path: 'generos/editar/:id',component:EditarGenerosComponent}, //Capacidad de añadir el atributo para su modificacion
     
     {path: 'peliculas',component:ListadoPeliculasComponent},
     {path: 'peliculas/crear',component:CrearPeliculaComponent},

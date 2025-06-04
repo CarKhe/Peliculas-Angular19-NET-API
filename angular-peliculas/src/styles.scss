@@ -8,7 +8,7 @@
     outlined-label-text-color: black,
     protected-label-text-color: white,
     text-label-text-color: white,
-    filled-disabled-container-color: purple,
+    filled-disabled-container-color: lightgray,
     outlined-outline-color:black,
     outlined-ripple-color: green,
     outlined-focus-state-layer-opacity: purple,
@@ -17,6 +17,12 @@
   ));
    @include mat.icon-overrides((
     color: white,
+  ));
+  @include mat.form-field-overrides((
+    filled-caret-color: crimson,
+    filled-focus-active-indicator-color: crimson,
+    outlined-focus-outline-color: crimson,
+    outlined-focus-label-text-color:crimson
   ));
   
 }
