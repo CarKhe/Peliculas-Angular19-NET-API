@@ -1,6 +1,6 @@
-<!-- <div class="div-agregar-pelicula">
+<div class="div-agregar-pelicula">
   <button mat-flat-button class="primary" (click)="agregarPelicula()">Agregar Pelicula</button>
-</div> -->
+</div>
 
 
 <!-- <app-listado-generico [listado]="peliculas">
@@ -56,6 +56,9 @@
           <p>
             <a>{{pelicula.nombre | uppercase }}</a>
           </p>
+          <div class="class_margin">
+            <app-rating [maxRating]="5"></app-rating>
+          </div>
           <div>
             <a mat-flat-button class="primary">Editar</a>
             <button mat-flat-button class="secondary">Borrar</button>

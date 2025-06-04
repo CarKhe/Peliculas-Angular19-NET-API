@@ -26,8 +26,30 @@ a,button {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .pelicula-container{
-    
+    margin-right: 2%;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 2%;
+}
+
+p{
+    max-width: 255px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+button{
+    margin-left: 1rem;
+}
+
+.class_margin{
+    margin-bottom: 1rem;
 }
