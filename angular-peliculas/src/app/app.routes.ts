@@ -15,6 +15,7 @@ export const routes: Routes = [
 
     {path: 'actores',component:ListadoActoresComponent},
     {path: 'actores/crear',component:CrearActoresComponent},
+    {path: 'actores/editar/:id',component:CrearActoresComponent},
     
     {path: 'cines',component: ListadoCineComponent},
     {path: 'cines/crear',component:CrearCineComponent},

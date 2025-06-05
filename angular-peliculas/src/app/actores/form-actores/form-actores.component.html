@@ -1,5 +1,5 @@
 <!-- 4 -->
- <form [formGroup]="form">
+ <form (submit)="guardar()" [formGroup]="form">
     <mat-form-field appearance="outline">
         <mat-label>Nombre</mat-label>
         <input matInput [formControl]="form.controls.nombre"/>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormActoresComponent } from "../form-actores/form-actores.component";
+import { ActorCreacionDTO } from '../actores';
 
 @Component({
   selector: 'app-crear-actores',
@@ -8,5 +9,7 @@ import { FormActoresComponent } from "../form-actores/form-actores.component";
   styleUrl: './crear-actores.component.css'
 })
 export class CrearActoresComponent {
-
+  guardarCambios(actor:ActorCreacionDTO){
+    console.log('creando actor',actor);
+  }
 }
