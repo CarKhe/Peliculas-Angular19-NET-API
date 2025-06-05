@@ -1,5 +1,5 @@
 <form (submit)="guardarCambios()" [formGroup]="form">
-    <mat-form-field appearance="outline" class="info">
+    <mat-form-field appearance="outline" class="primary">
         <mat-label>Nombre</mat-label>
         <input matInput [formControl]="form.controls.nombre"  />
         <mat-error>{{obtenerErrorNombre()}}</mat-error>
