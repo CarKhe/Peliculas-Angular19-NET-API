@@ -15,3 +15,18 @@ export function capitalString(): ValidatorFn{
         return null;
     }
 }
+
+export function noFutureDate(): ValidatorFn{
+    return (control:AbstractControl): ValidationErrors | null =>{
+        const fechaEscogida = new Date(control.value);
+        const hoy = new Date();
+        if(fechaEscogida>hoy){
+            return{
+                futuro:{
+                    mensaje: "La Fecha no debe ser en el Futuro"
+                }
+            }
+        }
+        return null;
+    }
+}
