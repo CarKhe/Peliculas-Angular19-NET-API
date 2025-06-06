@@ -26,6 +26,7 @@ export class FormActoresComponent implements OnInit {
   model?:ActorDTO;
 
 
+
   @Output()
   posteoForm = new EventEmitter<ActorCreacionDTO>();
   //3
@@ -58,6 +59,7 @@ export class FormActoresComponent implements OnInit {
     if(!this.form.valid) return;
     const actor = this.form.value as ActorCreacionDTO;
     actor.fechaNacimiento = moment(actor.fechaNacimiento).toDate();
+    if(typeof actor.foto === "string") actor.foto = undefined;
     this.posteoForm.emit(actor);
   }
 }

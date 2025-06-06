@@ -13,7 +13,8 @@
         <mat-error>{{errorFechaNacimiento()}}</mat-error>
     </mat-form-field>
     <div>
-        <app-input-img titulo="Foto del Actor" (archivoSeleccionado)="archivoSeleccionado($event)"></app-input-img>
+        <app-input-img [urlImgActual]="model?.foto"
+        titulo="Foto del Actor" (archivoSeleccionado)="archivoSeleccionado($event)"></app-input-img>
     </div>
     <div class="contenedor-botones">
         <button type="submit" mat-flat-button [disabled]="form.invalid">guardar</button>

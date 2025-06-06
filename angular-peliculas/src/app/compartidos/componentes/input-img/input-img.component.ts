@@ -15,6 +15,8 @@ export class InputImgComponent {
   @Output()
   archivoSeleccionado = new EventEmitter<File>();
 
+  @Input()
+  urlImgActual?: string;
 
   imagenBase64?:string;
 
@@ -25,6 +27,7 @@ export class InputImgComponent {
       toBase64(file).then((valor:string) => this.imagenBase64 = valor)
       .catch(error => console.log(error));
       this.archivoSeleccionado.emit(file);
+      this.urlImgActual = undefined;
     }
   }
 }
