@@ -9,13 +9,14 @@ import { ListadoCineComponent } from './cines/listado-cine/listado-cine.componen
 import { ListadoPeliculasComponent } from './peliculas/listado-peliculas/listado-peliculas.component';
 import { CrearPeliculaComponent } from './peliculas/crear-pelicula/crear-pelicula.component';
 import { EditarGenerosComponent } from './generos/editar-generos/editar-generos.component';
+import { EditarActoresComponent } from './actores/editar-actores/editar-actores.component';
 
 export const routes: Routes = [
     {path: '',component:LandingPageComponent},
 
     {path: 'actores',component:ListadoActoresComponent},
     {path: 'actores/crear',component:CrearActoresComponent},
-    {path: 'actores/editar/:id',component:CrearActoresComponent},
+    {path: 'actores/editar/:id',component:EditarActoresComponent},
     
     {path: 'cines',component: ListadoCineComponent},
     {path: 'cines/crear',component:CrearCineComponent},
