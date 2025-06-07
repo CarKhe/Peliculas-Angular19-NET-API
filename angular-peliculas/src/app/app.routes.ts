@@ -10,6 +10,7 @@ import { ListadoPeliculasComponent } from './peliculas/listado-peliculas/listado
 import { CrearPeliculaComponent } from './peliculas/crear-pelicula/crear-pelicula.component';
 import { EditarGenerosComponent } from './generos/editar-generos/editar-generos.component';
 import { EditarActoresComponent } from './actores/editar-actores/editar-actores.component';
+import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
 
 export const routes: Routes = [
     {path: '',component:LandingPageComponent},
@@ -20,6 +21,7 @@ export const routes: Routes = [
     
     {path: 'cines',component: ListadoCineComponent},
     {path: 'cines/crear',component:CrearCineComponent},
+    {path: 'cines/editar/:id',component:EditarCineComponent},
 
     {path: 'generos',component:IndiceGenerosComponent},
     {path: 'generos/crear',component:CrearGenerosComponent},
