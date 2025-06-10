@@ -14,6 +14,9 @@ export class ListadoPeliculasComponent {
   @Input({required:true})
   peliculas !: any[];
 
+  @Input()
+  Admin: boolean = true;
+
   agregarPelicula(){
     this.peliculas.push({
         nombre: 'Pelicula de Minecraft',

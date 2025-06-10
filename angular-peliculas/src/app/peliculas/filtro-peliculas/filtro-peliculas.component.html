@@ -9,7 +9,7 @@
         <mat-select [formControl]="form.controls.generoId">
             <mat-option value="0">Selecciona un Genero</mat-option>
             @for (genero of generos; track $index) {
-                <mat-option value="genero.id">{{genero.genero}}</mat-option>
+                <mat-option [value]="genero.generoId">{{genero.genero}}</mat-option>
             }
         </mat-select>
     </mat-form-field>
@@ -20,8 +20,9 @@
     <div>
         <mat-checkbox [formControl]="form.controls.enCines">En Cines</mat-checkbox>
     </div>
-    
     <div>
         <button mat-flat-button class="warn">Limpiar</button>
     </div>
 </form>
+
+<app-listado-peliculas [peliculas]="peliculas" [Admin]="false"></app-listado-peliculas>
