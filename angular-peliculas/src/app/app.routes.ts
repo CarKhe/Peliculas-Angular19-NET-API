@@ -12,6 +12,7 @@ import { EditarGenerosComponent } from './generos/editar-generos/editar-generos.
 import { EditarActoresComponent } from './actores/editar-actores/editar-actores.component';
 import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
 import { FiltroPeliculasComponent } from './peliculas/filtro-peliculas/filtro-peliculas.component';
+import { EditarPeliculaComponent } from './peliculas/editar-pelicula/editar-pelicula.component';
 
 export const routes: Routes = [
     {path: '',component:LandingPageComponent},
@@ -30,6 +31,7 @@ export const routes: Routes = [
     
     {path: 'peliculas',component:ListadoPeliculasComponent},
     {path: 'peliculas/crear',component:CrearPeliculaComponent},
+    {path: 'peliculas/editar/:id',component:EditarPeliculaComponent},
     {path: 'peliculas/filtrar',component:FiltroPeliculasComponent},
 
     {path: '**', redirectTo:''} //Se puede agrtegar un componente 404 etc o redirigir automaticamente

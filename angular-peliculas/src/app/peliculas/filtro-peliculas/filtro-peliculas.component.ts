@@ -7,8 +7,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ListadoPeliculasComponent } from "../listado-peliculas/listado-peliculas.component";
 import { FiltroPelicula } from './filtroPeliculas';
-import { validateHorizontalPosition } from '@angular/cdk/overlay';
 import { Location} from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-filtro-peliculas',
@@ -18,13 +18,17 @@ import { Location} from '@angular/common';
 })
 export class FiltroPeliculasComponent implements OnInit {
   ngOnInit(): void {
+    this.leerValoresUrl();
+    this.buscarPeliculas(this.form.value as FiltroPelicula);
     this.form.valueChanges.subscribe(valores =>{
       this.peliculas = this.peliculasOriginal;
       this.buscarPeliculas(valores as FiltroPelicula);
+      this.escribirUrlParametros(valores as FiltroPelicula);
     });
   }
   private formBuilder = inject(FormBuilder);
   private location = inject(Location);
+  private activatedRoute = inject(ActivatedRoute);
 
   form = this.formBuilder.group({
     titulo:'',
@@ -163,6 +167,17 @@ export class FiltroPeliculasComponent implements OnInit {
       queryStrings.push(`enCines=${valores.enCines}`);
     }
 
-    this.location.replaceState("peliculas/filtrar");
+    this.location.replaceState("peliculas/filtrar",queryStrings.join('&'));
+  }
+
+  leerValoresUrl(){
+    this.activatedRoute.queryParams.subscribe((params:any)=>{
+      var object:any ={};
+      if(params.titulo) object.titulo = params.titulo;
+      if(params.generoId) object.generoId = Number(params.generoId);
+      if(params.proximosEstrenos) object.proximosEstrenos = params.proximosEstrenos;
+      if(params.enCines) object.enCines = params.enCines;
+      this.form.patchValue(object);
+    });
   }
 }
