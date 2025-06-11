@@ -20,6 +20,12 @@
 
     <app-input-img titulo="Poster Pelicula" [urlImgActual]="modelo?.poster" (archivoSeleccionado)="archivoSeleccionado($event)"></app-input-img>
 
+    <h4>Seleccione Los Generos</h4>
+    <app-selector-multiple [Seleccionados]="generosSeleccionados" [NoSeleccionados]="generosNoSeleccionados" ></app-selector-multiple>
+
+    <h4>Seleccione Los Cines</h4>
+    <app-selector-multiple [Seleccionados]="CinesSeleccionados" [NoSeleccionados]="CinesNoSeleccionados" ></app-selector-multiple>
+
     <div class="contenedor-botones">
         <button type="submit" mat-flat-button [disabled]="form.invalid">guardar</button>
         <a mat-stroked-button routerLink="/">Cancelar</a>

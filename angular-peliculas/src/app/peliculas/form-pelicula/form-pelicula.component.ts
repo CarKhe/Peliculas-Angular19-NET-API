@@ -8,10 +8,12 @@ import { RouterLink } from '@angular/router';
 import { InputImgComponent } from '../../compartidos/componentes/input-img/input-img.component';
 import { PeliculasCrearDTO, PeliculasDTO } from '../peliculas';
 import moment from 'moment';
+import { SelectorMultipleDTO } from '../../compartidos/componentes/selector-multiple/selectorMultipleModelo';
+import { SelectorMultipleComponent } from "../../compartidos/componentes/selector-multiple/selector-multiple.component";
 
 @Component({
   selector: 'app-form-pelicula',
-  imports: [MatFormFieldModule, ReactiveFormsModule,MatInputModule,MatButtonModule,RouterLink,MatDatepickerModule,InputImgComponent],
+  imports: [MatFormFieldModule, ReactiveFormsModule, MatInputModule, MatButtonModule, RouterLink, MatDatepickerModule, InputImgComponent, SelectorMultipleComponent],
   templateUrl: './form-pelicula.component.html',
   styleUrl: './form-pelicula.component.css'
 })
@@ -19,6 +21,21 @@ export class FormPeliculaComponent implements OnInit {
   ngOnInit(): void {
     if(this.modelo !== undefined) this.form.patchValue(this.modelo);
   }
+
+  @Input({required:true})
+  generosNoSeleccionados!: SelectorMultipleDTO[];
+
+  @Input({required:true})
+  generosSeleccionados!: SelectorMultipleDTO[];
+
+  
+  @Input({required:true})
+  CinesNoSeleccionados!: SelectorMultipleDTO[];
+
+  @Input({required:true})
+  CinesSeleccionados!: SelectorMultipleDTO[];
+
+
   @Input()
   modelo?: PeliculasDTO;
 
@@ -42,7 +59,11 @@ export class FormPeliculaComponent implements OnInit {
   guardarCambios(){
     if(!this.form.valid) return;
     const pelicula = this.form.value as PeliculasCrearDTO;
-    pelicula.fechLanzamiento = moment(pelicula.fechLanzamiento).toDate();
+    pelicula.fechaLanzamiento = moment(pelicula.fechaLanzamiento).toDate();
+    const generosIds = this.generosSeleccionados.map(val => val.llave);
+    pelicula.generosIds = generosIds;
+    const cinesIds = this.CinesSeleccionados.map(val=>val.llave);
+    pelicula.cinesIds = cinesIds;
     this.posteoFormulario.emit(pelicula);
   }
 
