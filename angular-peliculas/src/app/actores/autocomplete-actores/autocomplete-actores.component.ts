@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatAutocompleteModule, MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -21,4 +21,11 @@ export class AutocompleteActoresComponent {
     {id:2,nombre:"Mil Mascaras",personaje:"",foto:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mil_Mascaras_en_Morbido_2012_%28cropped%29.jpg/330px-Mil_Mascaras_en_Morbido_2012_%28cropped%29.jpg"},
     {id:3,nombre:"L.A PARK",personaje:"",foto:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LA_Park_at_LuchaTO_Jan_2016.jpg/330px-LA_Park_at_LuchaTO_Jan_2016.jpg"},
   ];
+
+  actoresSeleccionados:ActorAutoCompleteDTO[] =[];
+
+  actorSeleccionado(event: MatAutocompleteSelectedEvent){
+    this.actoresSeleccionados.push(event.option.value);
+    this.control.patchValue('');
+  }
 }

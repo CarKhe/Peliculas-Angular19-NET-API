@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using PeliculasAPI.Entidades;
 
 namespace PeliculasAPI.Controllers
 {
@@ -21,6 +22,9 @@ namespace PeliculasAPI.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            //var repositorio = new RepositorioPrueba();
+            //List<Genero> generos = repositorio.GetAllGeneros();
+            
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

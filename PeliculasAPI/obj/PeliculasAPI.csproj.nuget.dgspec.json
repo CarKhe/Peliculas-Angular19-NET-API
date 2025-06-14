@@ -1,34 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carlos\\Desktop\\Cursos\\curso-angular\\PeliculasAPI\\PeliculasAPI.csproj": {}
+    "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\PeliculasAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carlos\\Desktop\\Cursos\\curso-angular\\PeliculasAPI\\PeliculasAPI.csproj": {
+    "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\PeliculasAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carlos\\Desktop\\Cursos\\curso-angular\\PeliculasAPI\\PeliculasAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\PeliculasAPI.csproj",
         "projectName": "PeliculasAPI",
-        "projectPath": "C:\\Users\\Carlos\\Desktop\\Cursos\\curso-angular\\PeliculasAPI\\PeliculasAPI.csproj",
+        "projectPath": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\PeliculasAPI.csproj",
         "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carlos\\Desktop\\Cursos\\curso-angular\\PeliculasAPI\\obj\\",
+        "outputPath": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -81,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
