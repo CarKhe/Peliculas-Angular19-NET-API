@@ -7,7 +7,15 @@ builder.Services.AddControllers();
 //builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer(); //Se agrega el end pont de la API
 builder.Services.AddSwaggerGen(); //se especifica que se usara swagger
+
+
+builder.Services.AddOutputCache( opciones => //Agregando el servicio de cache
+{
+    opciones.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(15); //Tiempo asignado para el cache
+});
 var app = builder.Build();
+
+//Los MiddleWare
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -17,10 +25,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(); //Uso interfaz de swagger
 }
 
-app.UseHttpsRedirection();
+app.UseHttpsRedirection(); //MiddleWare
 
-app.UseAuthorization();
+app.UseOutputCache();  //MiddleWare
 
-app.MapControllers();
+app.UseAuthorization(); //MiddleWare
 
-app.Run();
+app.MapControllers(); //MiddleWare
+
+app.Run(); //Fin

@@ -21,9 +21,15 @@ namespace PeliculasAPI
             return _generos;
         }
 
-        public Genero? GetOne(int id) 
-        { 
+        public async Task<Genero?> GetOne(int id)  //Programacion Asyncrono
+        {
+            await Task.Delay(TimeSpan.FromSeconds(3));  //Espera asincrona
             return _generos.FirstOrDefault(o => o.Id == id);
+        }
+
+        private async Task LogVoid() 
+        {
+            
         }
     }
 }

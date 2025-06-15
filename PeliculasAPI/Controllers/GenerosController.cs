@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
 using PeliculasAPI.Entidades;
 
 namespace PeliculasAPI.Controllers
@@ -18,16 +19,17 @@ namespace PeliculasAPI.Controllers
         }
 
         [HttpGet("{id:int}/{nombre?}")]//Sub ruteo que permite utilizar 2 Metodos distintos aqui es "api/generos/1/Roberto el ? es por valor default"
-        public Genero? GetOne(int id, string nombre = "Roberto") 
+        public async Task<Genero?> GetOne(int id, string nombre = "Roberto") 
         {
-            return new RepositorioPrueba().GetOne(id);
+            return await new RepositorioPrueba().GetOne(id);
         }
 
         [HttpGet("{id:int}")]
-        public ActionResult<Genero> GetOne404(int id)
+        [OutputCache] //Asignar que se utilizara cache en esta funcion
+        public async  Task<ActionResult<Genero>> GetOne404(int id)
         {
             var repo = new RepositorioPrueba();
-            var genero = repo.GetOne(id);
+            var genero = await repo.GetOne(id);
             if (genero is null)
             {
                 return NotFound();
@@ -48,7 +50,7 @@ namespace PeliculasAPI.Controllers
 
 
         [HttpPost]
-        public void Post() 
+        public void Post([FromBody]Genero genero) //Frombody para que no se vena los parametros en la url del api
         {
             
         }

@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{0796BD63-7D3E-4176-B34E-28D38B2D8373}|PeliculasAPI.csproj|solutionrelative:controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0796BD63-7D3E-4176-B34E-28D38B2D8373}|PeliculasAPI.csproj|c:\\users\\carlos\\desktop\\cursos\\angular asp\\peliculas-angular19-net-api\\peliculasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0796BD63-7D3E-4176-B34E-28D38B2D8373}|PeliculasAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0796BD63-7D3E-4176-B34E-28D38B2D8373}|PeliculasAPI.csproj|c:\\users\\carlos\\desktop\\cursos\\angular asp\\peliculas-angular19-net-api\\peliculasapi\\repositorioprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0796BD63-7D3E-4176-B34E-28D38B2D8373}|PeliculasAPI.csproj|solutionrelative:repositorioprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0796BD63-7D3E-4176-B34E-28D38B2D8373}|PeliculasAPI.csproj|c:\\users\\carlos\\desktop\\cursos\\angular asp\\peliculas-angular19-net-api\\peliculasapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0796BD63-7D3E-4176-B34E-28D38B2D8373}|PeliculasAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0796BD63-7D3E-4176-B34E-28D38B2D8373}|PeliculasAPI.csproj|c:\\users\\carlos\\desktop\\cursos\\angular asp\\peliculas-angular19-net-api\\peliculasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0796BD63-7D3E-4176-B34E-28D38B2D8373}|PeliculasAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,42 +34,42 @@
               "Title": "GenerosController.cs",
               "DocumentMoniker": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\Controllers\\GenerosController.cs",
               "RelativeDocumentMoniker": "Controllers\\GenerosController.cs",
-              "ToolTip": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\Controllers\\GenerosController.cs",
-              "RelativeToolTip": "Controllers\\GenerosController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCEAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\Controllers\\GenerosController.cs*",
+              "RelativeToolTip": "Controllers\\GenerosController.cs*",
+              "ViewState": "AgIAACoAAAAAAAAAAAAwwDQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-14T02:02:20.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RepositorioPrueba.cs",
               "DocumentMoniker": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\RepositorioPrueba.cs",
               "RelativeDocumentMoniker": "RepositorioPrueba.cs",
               "ToolTip": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\RepositorioPrueba.cs",
               "RelativeToolTip": "RepositorioPrueba.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAkwBkAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-14T01:44:38.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T14:56:33.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Carlos\\Desktop\\Cursos\\Angular Asp\\Peliculas-Angular19-NET-API\\PeliculasAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -77,8 +77,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-30T14:28:49.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T14:28:49.048Z"
             }
           ]
         }

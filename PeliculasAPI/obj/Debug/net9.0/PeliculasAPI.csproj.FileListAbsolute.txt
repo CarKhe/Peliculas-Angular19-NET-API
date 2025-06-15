@@ -50,7 +50,6 @@ C:\Users\Carlos\Desktop\Cursos\Angular Asp\Peliculas-Angular19-NET-API\Peliculas
 C:\Users\Carlos\Desktop\Cursos\Angular Asp\Peliculas-Angular19-NET-API\PeliculasAPI\obj\Debug\net9.0\PeliculasAPI.csproj.CoreCompileInputs.cache
 C:\Users\Carlos\Desktop\Cursos\Angular Asp\Peliculas-Angular19-NET-API\PeliculasAPI\obj\Debug\net9.0\PeliculasAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Carlos\Desktop\Cursos\Angular Asp\Peliculas-Angular19-NET-API\PeliculasAPI\obj\Debug\net9.0\PeliculasAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Carlos\Desktop\Cursos\Angular Asp\Peliculas-Angular19-NET-API\PeliculasAPI\obj\Debug\net9.0\PeliculasAPI.sourcelink.json
 C:\Users\Carlos\Desktop\Cursos\Angular Asp\Peliculas-Angular19-NET-API\PeliculasAPI\obj\Debug\net9.0\scopedcss\bundle\PeliculasAPI.styles.css
 C:\Users\Carlos\Desktop\Cursos\Angular Asp\Peliculas-Angular19-NET-API\PeliculasAPI\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Carlos\Desktop\Cursos\Angular Asp\Peliculas-Angular19-NET-API\PeliculasAPI\obj\Debug\net9.0\staticwebassets.development.json
